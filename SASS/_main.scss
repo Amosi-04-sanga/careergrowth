@@ -143,6 +143,16 @@
         text-align: center;
         text-transform: capitalize;
     }
-    
+    &__icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 30vw;
+        margin: auto;
+        padding: .3rem 0;        
+    }
+   
 }
+
+// icons 
 

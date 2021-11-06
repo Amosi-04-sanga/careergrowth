@@ -2,22 +2,22 @@
     position: sticky;
     top: 0;
     z-index: 111;
-    background-color: rgb(212, 206, 206);
+    background-color: rgba(116, 113, 113, 0.5);
     
     
   &__nav {
-    
      display: flex;
      align-items: center;
      justify-content: space-between;
-     padding: 0 .7rem;
+     padding: .5rem .7rem;
      margin-bottom: 3rem;
-     box-shadow: 0 0 .6rem 0 hsl(0, 3%, 82%);
+     //box-shadow: 0 0 .6rem 0 hsl(0, 3%, 82%);
     }
     
   &__domain {
       text-transform: uppercase;
       font-weight: 900;
+      letter-spacing: .4rem;
   }
   
   &__links {
@@ -70,6 +70,12 @@
       text-transform: capitalize;
   }
 
+}
+
+
+// top menu bar
+.fa-bars {
+    font-size: 2rem;
 }
 
 

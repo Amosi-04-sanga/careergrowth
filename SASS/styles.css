@@ -41,7 +41,7 @@ button {
   position: sticky;
   top: 0;
   z-index: 111;
-  background-color: #d4cece;
+  background-color: rgba(116, 113, 113, 0.5);
 }
 
 .header__nav {
@@ -54,15 +54,14 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 .7rem;
+  padding: .5rem .7rem;
   margin-bottom: 3rem;
-  -webkit-box-shadow: 0 0 0.6rem 0 #d2d0d0;
-          box-shadow: 0 0 0.6rem 0 #d2d0d0;
 }
 
 .header__domain {
   text-transform: uppercase;
   font-weight: 900;
+  letter-spacing: .4rem;
 }
 
 .header__links {
@@ -112,6 +111,10 @@ button {
 
 .header__text {
   text-transform: capitalize;
+}
+
+.fa-bars {
+  font-size: 2rem;
 }
 
 .main {
@@ -264,6 +267,20 @@ button {
 .social-medias__heading {
   text-align: center;
   text-transform: capitalize;
+}
+
+.social-medias__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 30vw;
+  margin: auto;
+  padding: .3rem 0;
 }
 
 @media only screen and (max-width: 1200px) {
