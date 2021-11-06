@@ -1,3 +1,25 @@
-// javascript here...
-console.log("javascript is KING of web")
+// DOM element references
+
+
+
+
+
+
+// EVENT LISTNERS
+
+
+
+
+
+
+// FUNCTIONS
+
+
+
+
+
+// SETUP
+
+
+
 
