@@ -16,5 +16,26 @@
         font-style: italic;
     }
 
+    // to top arrow
+    &__to-top {
+        position: fixed;
+        right: 5vw;
+        bottom: 5vw;
+        animation: hang 1.2s linear infinite;
+    }
+    
+    // arrow hang animation
+    @keyframes hang {
+        0%{bottom: 5vw;}
+        0%{bottom: 6vw;}
+    }    
+}
+
+// arrow
+.fa-arrow-up {
+    cursor: pointer;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: hsla(0, 0%, 0%, .6);
 }
 
