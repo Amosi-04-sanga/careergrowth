@@ -1,0 +1,73 @@
+// media queries.
+@media only screen and (max-width: 1200px) {
+  
+   .main {
+
+       &__grid {
+           grid-gap: 3vw;
+           grid-template-columns: repeat(2, 1fr);
+       }
+
+       &__post-photo {
+         height: 25vw;
+       }
+
+       &__flex {
+           width: 50%;
+    }
+
+   }
+}
+
+@media only screen and (max-width: 800px) {
+  
+   .main__grid {
+    grid-gap: 2vw;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__flex {
+      width: 60%;
+  } 
+
+}
+
+@media only screen and (max-width: 600px) {
+   
+   .main {
+
+      &__grid {
+          grid-template-columns: 1fr;
+      }
+
+      &__post-photo {
+          width: 25vw;
+          height: 50%;
+          margin: 0 1rem 0 .6rem;
+      }
+
+      &__single-post {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+      }
+
+      &__right-align {
+          padding: .2rem;
+      }
+
+
+  }
+
+
+}
+
+@media only screen and (max-width: 400px) {
+   
+   .main__grid {
+    grid-template-columns: 1fr;
+  }
+  
+}
+
+

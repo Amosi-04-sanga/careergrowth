@@ -1,0 +1,75 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 111;
+    background-color: rgb(212, 206, 206);
+    
+    
+  &__nav {
+    
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 .7rem;
+     margin-bottom: 3rem;
+     box-shadow: 0 0 .6rem 0 hsl(0, 3%, 82%);
+    }
+    
+  &__domain {
+      text-transform: uppercase;
+      font-weight: 900;
+  }
+  
+  &__links {
+      display: none;
+    }
+
+  &__body {
+      position: relative;
+      height: 80vh;
+      margin-bottom: 5rem;
+  }
+
+  &__dark-bg,
+  &__photo {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+  &__text-center {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      
+      text-align: center;
+      width: 80%;
+      color: $white;
+  }
+
+  &__author {
+     position: absolute;
+     bottom: -12%;
+     left: 50%;
+     transform: translateX(-50%);    
+  }
+
+  &__author-photo-wrapper {
+      width: 5rem;
+      height: 5rem;
+
+  }
+
+  &__author-photo {
+      width: 100%;
+      height: 100%;
+  }
+
+  &__text {
+      text-transform: capitalize;
+  }
+
+}
+
+

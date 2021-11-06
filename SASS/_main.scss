@@ -1,0 +1,148 @@
+.main {
+
+   padding: 3rem;
+
+   &__related-posts {
+       margin: 4rem 0;
+   }
+
+   &__grid {
+       display: grid;
+   }
+
+   &__header {
+       text-transform: uppercase;
+       text-align: center;
+       margin: .7rem 0;
+
+       &-small {
+          font-style: oblique;
+          text-transform: uppercase;
+       }
+
+   }
+
+   &__single-post {
+       margin: 2rem 0;
+       background-color: #F1D1D1;
+   }
+
+   &__text {
+       text-indent: .6rem;
+       &-small {
+           margin: .4rem 0 0;
+           font-size: $smallest-font;
+       }
+   }
+
+   &__text::first-letter {
+       text-transform: uppercase;
+       font-weight: 900;
+   }
+
+   &__post-photo {
+       width: 100%;
+       height: 25vh;
+   }
+
+   &__text-small {
+       font-size: $smallest-font;
+   }
+
+   &__read-more {
+       display: block;
+       padding: .3rem .4rem;
+       border-radius: .4rem;
+       margin: .4rem auto 1.7rem;
+       background-color: #C28080;
+       text-transform: capitalize;
+   }
+
+   &__read-more:hover {
+       background-color: #b35858;
+       transition: background-color .4s ease-in-out;
+   }
+
+   &__flex {
+       width: 80%;
+       margin: auto;
+       display: flex;
+       justify-content: space-evenly;
+   }
+
+   &__link.active {
+       text-decoration: underline;
+       color: green;
+   }
+
+   &__thumnail {
+       display: flex;
+   }
+
+   &__photo-small {
+       width: 15vw;
+       height: 12vh;
+       margin-right: 5%;
+   }
+
+   &__date-added {
+       text-transform: lowercase;
+       margin-bottom: 2rem;
+   }
+
+   &__links-grid {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+   }
+
+   &__link:hover {
+      text-decoration: underline;
+   }
+
+   &__back-lines {
+       position: relative;
+       z-index: 2;
+   }
+
+   &__back-lines::before,
+   &__back-lines::after {
+       content: "";
+       position: absolute;
+       z-index: -2;
+       height: 1px;
+       width: 100%;
+       background-color: $border-color;
+       
+   }
+
+
+   &__back-lines::before {
+       left: 0;
+       top: 0;
+   }
+
+   &__back-lines::after {
+       left: 0;
+       bottom: 50%;
+   }
+
+   &__header-underline {
+       margin-top: -.8rem;
+       background-color: $border-color;
+       height: 1px;
+       border: none;
+       margin-bottom: 3.5rem;
+   }
+
+}
+
+.social-medias {
+    margin: 2rem 0;
+
+    &__heading {
+        text-align: center;
+        text-transform: capitalize;
+    }
+    
+}
+

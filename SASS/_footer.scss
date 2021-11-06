@@ -1,0 +1,20 @@
+.footer {
+    height: 30vh;
+    background-color: #0a0a0a;
+    display: grid;
+    place-content: center;
+
+    &__test {
+        color: white;
+    }
+
+    &__link {
+        color: whitesmoke;
+    }
+
+    &__author {
+        font-style: italic;
+    }
+
+}
+
