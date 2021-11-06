@@ -1,2 +1,2 @@
 # careergrowth
-tips for career growth
+tips for growing any kind of career
