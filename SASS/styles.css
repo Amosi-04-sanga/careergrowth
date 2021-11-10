@@ -314,14 +314,16 @@ button {
         grid-template-columns: 1fr;
   }
   .main__post-photo {
-    width: 25vw;
     height: 50%;
-    margin: 0 1rem 0 .6rem;
   }
   .main__single-post {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -335,9 +337,40 @@ button {
 }
 
 @media only screen and (max-width: 400px) {
+  .main {
+    padding: .6rem;
+  }
   .main__grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .main__header {
+    font-size: 1rem;
+  }
+  .main__flex {
+    width: 80%;
+  }
+  .main__photo-small {
+    -webkit-box-flex: 40%;
+        -ms-flex: 40%;
+            flex: 40%;
+  }
+  .main__description {
+    -webkit-box-flex: 60%;
+        -ms-flex: 60%;
+            flex: 60%;
+  }
+  .main__links-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .main__link {
+    position: relative;
+  }
+  .main__link::before {
+    content: "amo";
+    position: absolute;
+    left: 0;
   }
 }
 

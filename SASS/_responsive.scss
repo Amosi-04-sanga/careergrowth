@@ -26,6 +26,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+
   &__flex {
       width: 60%;
   } 
@@ -41,13 +42,12 @@
       }
 
       &__post-photo {
-          width: 25vw;
           height: 50%;
-          margin: 0 1rem 0 .6rem;
       }
 
       &__single-post {
           display: flex;
+          flex-direction: column;
           align-items: center;
           justify-content: space-between;
       }
@@ -64,9 +64,36 @@
 
 @media only screen and (max-width: 400px) {
    
-   .main__grid {
-    grid-template-columns: 1fr;
-  }
+   .main {
+       padding: .6rem;
+       &__grid {
+        grid-template-columns: 1fr;
+      }
+      &__header {
+          font-size: 1rem;
+      }
+      &__flex {
+        width: 80%;
+      }
+      &__photo-small {
+          flex: 40%;
+      }
+      &__description {
+          flex: 60%;
+      }
+      &__links-grid {
+          grid-template-columns: 1fr;
+        }
+      &__pre {
+        position: relative;
+      }
+      &__pre::before {
+          content: "amo";
+          position: absolute;
+          left: 0;
+      }
+   }
+
   
 }
 
